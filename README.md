@@ -1,2 +1,2 @@
-# loginPageInsta-Desafio-Dio
-Pagina de Login  do instagram utilizando o flexbos
+# Desafio Dio - Página de Login do Instagram
+  Página recriada com flexbox.
