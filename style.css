@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+body{
+    background-color: rgb(243, 243, 243);
+    min-width: 320px;
+}
+.flex-container {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 0 50px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img {
+    height: 50rem;
+}
+
+.instagram-continue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group .links a{
+    color: #0095f6;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    height: 3rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 6rem;
+}
+
+.instagram-login {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue {
+    color: #0095f6;
+    font-weight: bold;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('image/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('image/googleplay-button.png');
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: 30px 0;
+    padding: 0 16px;
+}
+footer, footer a, footer p{
+    font-size: 9px;
+    color: gray;
+    padding: 0 10px 0 0;
+}
+hr{
+    display: none;
+}
+
+.meta{
+    display: none;
+}
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+.item1{
+    display: flex;
+    flex-direction: column;
+}
+.itemFilho1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.itemFilho2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+}
+.item2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+}
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .traco{
+        content: "";
+        height: 1px;
+        width: 80%;
+        background-color: gray;
+    }
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
+    
+    .get-the-app{
+        display: none;
+    }
+
+    hr{
+        display: block;
+        margin: 0;
+        padding: 0;
+        opacity: 0.4;
+    }
+
+    .item1{
+        display: flex;
+        flex-direction: column;
+        margin: 16px 16px;
+    }
+    .itemFilho1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .itemFilho1 a{
+        margin-top: 5px; 
+        font-size: 12px;
+    }
+    .itemFilho2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+    .itemFilho2 a{
+        margin-top: 5px; 
+        font-size: 12px;
+    }
+    .item2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .item2 p{
+        padding: 5px;
+        font-size: 12px;
+    }
+    .meta{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        top: 50px;
+    }
+    .meta div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .meta div img{
+        width: 20%;
+    }
+}
